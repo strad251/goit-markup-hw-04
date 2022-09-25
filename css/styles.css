@@ -101,11 +101,10 @@ h3 {
 .section-hero {
   text-align: center;
   padding: 200px 0;
-  background-image: url(/images/section-hero.jpg);
+  background-image: url("/images/section-hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-
-  background-color: var(--dark-background-color);
+  /* background-color: rgba; */
 }
 
 .page-title {
