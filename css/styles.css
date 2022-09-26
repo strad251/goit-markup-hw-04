@@ -111,6 +111,7 @@ h3 {
 
 .section-hero {
   max-width: 1600px;
+  height: 600px;
   margin: 0 auto;
   text-align: center;
   padding: 200px 0;
@@ -229,6 +230,11 @@ h3 {
   margin-top: 20px;
 }
 
+.link-footer:hover,
+.link-footer:focus {
+  color:  var(--highlited-text-color);
+}
+
 .address-margin {
   display: inline-block;
   margin-bottom: 9px;
@@ -295,11 +301,12 @@ h3 {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+  letter-spacing: 0.03em;
 
   text-align: center;
 
   padding: 6px 22px;
-  color: var(--dark-text-color);
+  background-color: var(--section-light-background-color);
 }
 
 .btn-filter:hover,
@@ -323,12 +330,13 @@ h3 {
   gap: 30px;
   flex-wrap: wrap;
 }
-.portfolio-item a{
+.portfolio-link {
   text-decoration: none;
+  display: block;
 }
 
-.portfolio-item:hover,
-.portfolio-item:focus{
+.portfolio-link:hover,
+.portfolio-link:focus{
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 }
@@ -388,26 +396,15 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 /* ICONS */
 .envelope, .smartphone {
   fill: currentColor;
-  margin-right: 10px;
-  padding: 0;
-}
-
-.envelope {
-  width: 20px;
-  height: 16px;
-}
-
-.smartphone {
-  width: 16px;
-  height: 20px;
+  margin-right: 20px;
+  
 }
 
 .smartphone:hover,
-.envelope:hover,
 .smartphone:focus,
+.envelope:hover,
 .envelope:focus {
-  fill: background: rgba(33, 150, 243, 1);
-  cursor: pointer;
+  fill:  var(--highlited-text-color);
 }
 
 .feature-icon-wrap {
@@ -426,14 +423,13 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   height: 70px;
 }
 
-
-
 .social-icons {
   display: flex;
   align-items: center;
   justify-content: center;
   column-gap: 10px;
 }
+
 .team-icons {
   display: flex;
   justify-content: center;
@@ -453,9 +449,8 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 .team-icons:hover,
 .team-icons:focus{
-  background-color: #2196F3;
-  fill: #fff;
-  cursor: pointer;
+  background-color: var(--highlited-text-color);
+  fill: var(--white-text-color);
 }
 .client-links {
   display: flex;
@@ -479,7 +474,6 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   fill: var(--highlited-text-color);
   box-shadow:0px 0px 0px 1px var(--highlited-text-color) inset;
 
-  cursor: pointer;
 }
 
 .client-icon {
